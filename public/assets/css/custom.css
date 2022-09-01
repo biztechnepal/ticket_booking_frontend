@@ -1,0 +1,143 @@
+#nprogress .bar {
+  /* background: #db2777 !important; */
+  background: #3BB77E !important;
+  height: 5px !important;
+}
+
+#nprogress .peg {
+  box-shadow: 0 0 10px #3BB77E, 0 0 5px #3BB77E !important;
+}
+
+#nprogress .spinner-icon {
+  border: dashed 3px transparent !important;
+  border-top-color: #FFFB00 !important;
+  border-left-color: #3BB77E !important;
+}
+.overlay-custom-class-name{
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 99;
+  background: none !important;
+  display: flex;
+  opacity: 0;
+}
+
+/* confirmation box */
+.confirmation-box {
+  width: 400px;
+  padding: 30px;
+  text-align: left;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 20px 75px rgba(0, 0, 0, 0.13);
+  color: #666;
+}
+
+/* confirmation box for result block*/
+.confirmation-box-result {
+  width: 1000px;
+  padding: 30px;
+  text-align: left;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 20px 75px rgba(0, 0, 0, 0.13);
+  color: #666;
+  height: 35em;
+  overflow: auto;
+}
+
+.customBtn {
+  display: inline-block;
+  padding: 0.46em 1.6em;
+  border: 0.1em solid #000000;
+  margin: 0 0.2em 0.2em 0;
+  border-radius: 0.12em;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  color: #000000;
+  text-shadow: 0 0.04em 0.04em rgba(0, 0, 0, 0.35);
+  background-color: #FFFFFF;
+  text-align: center;
+  transition: all 0.15s;
+}
+
+.customBtn:hover {
+  text-shadow: 0 0 2em rgba(255, 255, 255, 1);
+  color: #FFFFFF;
+  border-color: #FFFFFF;
+}
+
+@media all and (max-width:30em) {
+  .customBtn {
+    display: block;
+    margin: 0.4em auto;
+  }
+}
+
+
+
+.tag-input {
+  display: flex;
+  flex-wrap: wrap;
+  min-height: 48px;
+  padding: 0 8px;
+  border: 1px solid #d6d8da;
+  border-radius: 6px;
+}
+
+.tag-input input {
+  flex: 1;
+  border: none;
+  height: 46px;
+  font-size: 14px;
+  padding: 4px 0 0;
+}
+
+.tag-input input:focus {
+  outline: transparent;
+}
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+  margin: 8px 0 0;
+}
+
+.tag {
+  width: auto;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  padding: 0 8px;
+  font-size: 14px;
+  list-style: none;
+  border-radius: 6px;
+  margin: 0 8px 8px 0;
+  background: #0052cc;
+}
+
+.tag-title {
+  margin-top: 3px;
+}
+
+.tag-close-icon {
+  display: block;
+  width: 16px;
+  height: 16px;
+  line-height: 16px;
+  text-align: center;
+  font-size: 14px;
+  margin-left: 8px;
+  color: #0052cc;
+  border-radius: 50%;
+  background: #fff;
+  cursor: pointer;
+}
