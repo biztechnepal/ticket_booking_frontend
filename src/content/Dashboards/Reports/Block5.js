@@ -50,118 +50,98 @@ function Block5() {
   const theme = useTheme();
 
   return (
-    <Card>
-      <Stack
-        direction={{ xs: 'column', md: 'row' }}
-        divider={<Divider orientation="vertical" flexItem />}
-        justifyContent="space-between"
-        alignItems="stretch"
-        spacing={0}
-      >
-        <Box p={2.5} flexGrow={1}>
-          <Box
-            mb={2}
-            display="flex"
-            alignItems="center"
-            justifyContent="space-between"
-          >
-            <Box>
-              <Typography color="text.primary" variant="h4" gutterBottom>
-                {t('Deliveries')}
-              </Typography>
-              <Typography variant="subtitle2" noWrap>
-                {t('Total deliveries to date')}
-              </Typography>
-            </Box>
-            <Typography
-              variant="h2"
-              sx={{
-                color: `${theme.colors.error.main}`
-              }}
+    <>
+      <Card style={{}}>
+        <Stack
+          direction={{ xs: 'column', md: 'row' }}
+          divider={<Divider orientation="vertical" flexItem />}
+          justifyContent="space-between"
+          alignItems="stretch"
+          spacing={0}
+        >
+          <Box p={2.5} flexGrow={1} flexWrap={'wrap'}>
+            <Box
+              mb={2}
+              display="flex"
+              alignItems="center"
+              justifyContent="space-between"
             >
-              23,594
-            </Typography>
-          </Box>
-          <LinearProgressError variant="determinate" value={66.43} />
-          <Box
-            display="flex"
-            sx={{
-              mt: 0.6
-            }}
-            alignItems="center"
-            justifyContent="space-between"
-          >
-            <Typography
-              sx={{
-                color: `${theme.colors.alpha.black[50]}`
-              }}
-              variant="subtitle2"
-            >
-              {t('Target')}
-            </Typography>
-            <Typography
-              sx={{
-                color: `${theme.colors.alpha.black[50]}`
-              }}
-              variant="subtitle2"
-            >
-              100%
-            </Typography>
-          </Box>
-        </Box>
-        <Box p={2.5} flexGrow={1}>
-          <Box
-            mb={2}
-            display="flex"
-            alignItems="center"
-            justifyContent="space-between"
-          >
-            <Box>
-              <Typography color="text.primary" variant="h4" gutterBottom>
-                {t('Orders')}
-              </Typography>
-              <Typography variant="subtitle2" noWrap>
-                {t('Total orders to date')}
+              <Box>
+                <Typography color="text.primary" variant="h4" gutterBottom>
+                  {t('Total buses')}
+                </Typography>
+                <Typography variant="subtitle2" noWrap></Typography>
+              </Box>
+              <Typography
+                variant="h2"
+                sx={{
+                  color: `${theme.colors.error.main}`
+                }}
+              >
+                23,594
               </Typography>
             </Box>
-            <Typography
-              variant="h2"
-              sx={{
-                color: `${theme.colors.error.main}`
-              }}
-            >
-              $12,346
-            </Typography>
           </Box>
-          <LinearProgressPrimary variant="determinate" value={44.32} />
-          <Box
-            display="flex"
-            sx={{
-              mt: 0.6
-            }}
-            alignItems="center"
-            justifyContent="space-between"
-          >
-            <Typography
-              sx={{
-                color: `${theme.colors.alpha.black[50]}`
-              }}
-              variant="subtitle2"
+          <Box p={2.5} flexGrow={1}>
+            <Box
+              mb={2}
+              display="flex"
+              alignItems="center"
+              justifyContent="space-between"
             >
-              {t('Target')}
-            </Typography>
-            <Typography
-              sx={{
-                color: `${theme.colors.alpha.black[50]}`
-              }}
-              variant="subtitle2"
-            >
-              100%
-            </Typography>
+              <Box>
+                <Typography color="text.primary" variant="h4" gutterBottom>
+                  {t('Active bus schedules')}
+                </Typography>
+                <Typography variant="subtitle2" noWrap></Typography>
+              </Box>
+              <Typography
+                variant="h2"
+                sx={{
+                  color: `${theme.colors.error.main}`
+                }}
+              >
+                $12,346
+              </Typography>
+            </Box>
           </Box>
-        </Box>
-      </Stack>
-    </Card>
+          <Box p={2.5} flexGrow={1} flexWrap={'wrap'}>
+            <Box
+              mb={2}
+              display="flex"
+              alignItems="center"
+              justifyContent="space-between"
+            >
+              <Box>
+                <Typography color="text.primary" variant="h4" gutterBottom>
+                  {t('Active tickets bought')}
+                </Typography>
+                <Typography variant="subtitle2" noWrap></Typography>
+              </Box>
+              <Typography
+                variant="h2"
+                sx={{
+                  color: `${theme.colors.error.main}`
+                }}
+              >
+                23,594
+              </Typography>
+            </Box>
+          </Box>
+        </Stack>
+      </Card>
+      {/* <Card style={{ marginTop: 15, paddingTop: 20 }}>
+        <Stack
+          direction={{ xs: 'column', md: 'row' }}
+          divider={<Divider orientation="vertical" flexItem />}
+          justifyContent="space-between"
+          alignItems="stretch"
+          spacing={0}
+        >
+
+        </Stack>
+      </Card> */}
+    </>
   );
 }
 
