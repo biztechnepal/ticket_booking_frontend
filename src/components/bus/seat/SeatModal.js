@@ -129,7 +129,7 @@ const SeatModal = ({
         )}
 
         <Typography style={{ marginTop: 10 }}>
-          Row: <span>{data.row}</span> Column: {data.id}
+          Row: <span>{data.row}</span> Column: {data?.col}
         </Typography>
 
         <div

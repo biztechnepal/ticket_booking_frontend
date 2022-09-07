@@ -40,5 +40,7 @@ export default {
 
   API_DESTINATION: `${BASEURL}/destination`,
 
-  API_TICKET: `${BASEURL}/ticket`
+  API_TICKET: `${BASEURL}/ticket`,
+
+  API_DESTINATION: `${BASEURL}/destination`
 };

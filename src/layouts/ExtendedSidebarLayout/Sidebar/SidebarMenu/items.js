@@ -69,23 +69,6 @@ if (hasRole(['admin'])) {
           badgeTooltip: 'Updated'
         }
       ]
-    },
-    {
-      name: 'Bus',
-      icon: IoBusSharp,
-      items: [
-        {
-          name: 'Create bus',
-          link: '/management/bus/create',
-          badgeTooltip: 'Updated'
-        },
-
-        {
-          name: 'List buses',
-          link: '/management/bus',
-          badgeTooltip: 'Updated'
-        }
-      ]
     }
   );
 }

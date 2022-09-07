@@ -57,6 +57,19 @@ function AddSection() {
       .catch((err) => {
         console.log('err', err.response.data);
       });
+
+    await axiosClient
+      .get(urls.API_DESTINATION)
+      .then((res) => {
+        const { success, destination } = res.data;
+
+        if (success) {
+          setDestination(destination);
+        }
+      })
+      .catch((err) => {
+        console.log('err', err.response.data);
+      });
   }, []);
 
   const handleSubmit = async (values, helpers) => {
